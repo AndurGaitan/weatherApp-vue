@@ -8,10 +8,12 @@
       </div>
       <div v-if="loading">Cargando...</div>
       <div v-else>
+        <div  class="weather-container">
           <div v-for="(result, index) in weatherResults" :key="index" class="weather-card">
             <h2>{{ result.name }}, {{ result.sys.country }}</h2>
             <p>Temperatura: {{ result.main.temp }}°C</p>
           </div>
+        </div>
       </div>
     </div>
   </template>
@@ -61,11 +63,17 @@
   input[type="text"]{
     margin-right: 10px;
   }
+  .weather-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
   .weather-card {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
   </style>
   
