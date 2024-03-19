@@ -17,7 +17,7 @@ export default {
 
 <style>
 #app {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Roboto;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
